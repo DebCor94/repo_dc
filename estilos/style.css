@@ -1,0 +1,545 @@
+@charset "UTF-8";
+/*Imports de tipografía y colores desde la carpeta PARTIALS*/
+.fuenteRobotoBold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.fuenteRobotoItalic {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+}
+
+.fuenteRobotoNav {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.fuenteRoboto {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.italica {
+  font-style: italic;
+}
+
+.fuentetitulos {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.18em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: cornflowerblue;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.fuentetitle2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.18em;
+  font-weight: bold;
+  letter-spacing: 0.31em;
+  color: cornflowerblue;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.fuentetitle3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.18em;
+  font-weight: bold;
+  letter-spacing: 0.31em;
+  color: white;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.fuenteRobotoNews {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+}
+
+.fuenteRobotoFooter {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: cornflowerblue;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: .8rem;
+  margin-bottom: 2rem;
+}
+
+.fuenteRobotoForm {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  color: gray;
+}
+
+.fuentenewsletter {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  font-weight: normal;
+  color: cornflowerblue;
+}
+
+.fuentetitulos2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.18em;
+  font-weight: bold;
+  letter-spacing: 0.31em;
+  color: cornflowerblue;
+  text-align: center;
+}
+
+/*---------------------------------------------------------------------*/
+/*VARIABLES*/
+/*declaración de la variable ancho*/
+/*declaración de la variable alto*/
+/*declaración de la variable padding*/
+/*declaración de la variable bordeRedondo*/
+/*---------------------------------------------------------------------*/
+/*DISEÑO DEL INDEX*/
+/*header en bootstrap*/
+.menudesplegable {
+  color: white !important;
+}
+
+.impulsarg {
+  padding-left: 7px;
+  /*operación= resta*/
+  width: 11.25em;
+  /*operación= división y suma*/
+}
+
+ul {
+  list-style: none;
+}
+
+ul li:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(cornsilk));
+  background-image: linear-gradient(to bottom, white, cornsilk);
+  border-radius: 5px;
+  /*operación= multiplicación y suma*/
+}
+
+ul li:hover a {
+  color: cornflowerblue !important;
+}
+
+.navbar-light {
+  background-color: cornflowerblue;
+}
+
+.bg-light {
+  background-color: cornflowerblue !important;
+}
+
+/*main con BEM*/
+.container1 {
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: cornflowerblue;
+  background-clip: border-box;
+  border: none;
+}
+
+.card__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+}
+
+.card__title {
+  margin-bottom: .5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white !important;
+  text-transform: uppercase;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  font-size: 3em;
+}
+
+.card__text {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  line-height: 2em;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  /*animación aplicada al título principal del sitio web*/
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  /*animación aplicada al título principal del sitio web*/
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.img-fluid__slide {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slide-top;
+          animation-name: slide-top;
+}
+
+.slide-top {
+  /*animación extraída de Animista y aplicada a la descripción del sitio*/
+  -webkit-animation: slide-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+.inicio {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  font-size: 1em;
+  color: cornflowerblue;
+  line-height: 30px;
+  /*operación= división y resta*/
+  text-align: left;
+  padding-top: 1rem;
+}
+
+.btn-outline-primary {
+  color: none;
+  border-color: white;
+}
+
+button {
+  text-decoration: none;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button a :hover {
+  color: white !important;
+}
+
+/*Noticias destacadas con Bootstrap y BEM*/
+.card2 {
+  background-color: white;
+}
+
+.card2__news {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: grey;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.card2__btnNoticias {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  background-color: cornflowerblue;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-color: none !important;
+}
+
+/*Bloque de imágenes de la sección noticias con OPERACIONES (en base a las variables definidas al inicio del SCSS)*/
+.noticias-img {
+  width: 13.75em;
+  /*operación= resta*/
+  height: 220px;
+  /*operación= multiplicación y suma*/
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 110px;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/*Nuestra historia con cards de Bootstrap y BEM*/
+.cardNoti {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: white;
+  background-clip: border-box;
+  border: none;
+}
+
+.cardNoti__historia {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.cardNoti__text3 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.anchorwhite {
+  text-decoration: none;
+  color: white;
+}
+
+/*Nuestros valores*/
+tr {
+  background-color: none;
+}
+
+tr th {
+  text-align: center;
+}
+
+tr th td {
+  text-align: center;
+}
+
+/*Divisores de sección*/
+hr {
+  height: 0.62em !important;
+  margin: 0px;
+  opacity: 1;
+}
+
+.gradiente1 {
+  background: cornflowerblue;
+  background: -webkit-gradient(linear, left top, right top, from(#83a4d4), to(#b6fbff));
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+}
+
+/*---------------------------------------------------------------------*/
+/*DISEÑO DE QUIENESSOMOS.HTML*/
+/*intro en BEM*/
+.quienesSomos {
+  background-color: white;
+}
+
+.quienesSomos__titulo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.30em;
+  color: cornflowerblue;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 5rem;
+}
+
+.quienesSomos__presentación {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 4px;
+  word-spacing: 5px;
+  font-size: 1.87em;
+  color: grey;
+  line-height: 45px;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.contenedornoticias {
+  background-color: cornflowerblue;
+}
+
+.contenerdorvideo {
+  background-color: cornflowerblue;
+  height: 0px;
+  width: 100%;
+  max-width: 560px;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.video-responsive {
+  border: 5px solid white;
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  /*uso de transform:scale para el tamaño del video*/
+  border-radius: 1em;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.2%;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 280px) {
+  .video-responsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.subpresentación {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .20em;
+  word-spacing: 5px;
+  font-size: 1.3em;
+  color: white;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+/*---------------------------------------------------------------------*/
+/*DISEÑO DE SERVICIOS.HTML*/
+/*servicios con BEM*/
+.services {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+.services__img {
+  width: 13.75em;
+  /*operación= división y suma*/
+  height: 220px;
+  /*operación= multiplicación y suma*/
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 110px;
+  /*operación= multiplicación y resta*/
+}
+
+.services__text {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/*---------------------------------------------------------------------*/
+/*DISEÑO DE NOTICIAS.HTML*/
+/*Noticias con cards de Bootstrap y BEM*/
+.noticiasInterno {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
+}
+
+.noticiasInterno__news2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: cornflowerblue;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+.noticiasInterno__text {
+  font-family: 'Roboto', sans-serif;
+  color: cornflowerblue;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
