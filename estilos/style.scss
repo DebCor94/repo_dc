@@ -289,6 +289,20 @@ hr{
     }
 }
 
+<<<<<<< HEAD
+=======
+.card3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: white;
+    background-clip: border-box;
+    border: none;
+}
+
+>>>>>>> Versión_c_curvas
 .contenedornoticias {
     background-color: cornflowerblue;
 }
@@ -302,6 +316,7 @@ hr{
     position:relative;
 }
 
+<<<<<<< HEAD
 .video-responsive {
     border: 5px solid white;
     transform: scale(0.9,0.9); /*uso de transform:scale para el tamaño del video*/
@@ -318,6 +333,21 @@ hr{
         width: 100%;
         height: 100%
     }
+=======
+/*video*/
+.embed-container {
+    position: relative;
+    padding-bottom: 30%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+>>>>>>> Versión_c_curvas
 }
 
 .subpresentación {
