@@ -2,6 +2,9 @@
 @import "./partials/tipografia";
 @import "./partials/colores";
 @import "./partials/media-queries";
+@import "./font_awesome/scss/fontawesome.scss";
+@import "./font_awesome/scss/solid.scss";
+
 
 /*---------------------------------------------------------------------*/
 
@@ -11,11 +14,30 @@ $ancho: 20em; /*declaración de la variable ancho*/
 $alto: 10px; /*declaración de la variable alto*/
 $padding: 15px; /*declaración de la variable padding*/
 $bordeRedondo: 2px; /*declaración de la variable bordeRedondo*/
+$fa-font-path: "./font_awesome/webfonts";
 
 /*---------------------------------------------------------------------*/
 
 /*DISEÑO DEL INDEX*/
 /*header en bootstrap*/
+
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+}
+
+.whatsapp-icon {
+    margin-top:13px;
+}
 
 .menudesplegable {
     color: white !important;
