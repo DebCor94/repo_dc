@@ -400,6 +400,12 @@ hr {
   background: linear-gradient(to right, #83a4d4, #b6fbff);
 }
 
+/*Footer*/
+.newsletter {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 /*---------------------------------------------------------------------*/
 /*DISEÑO DE QUIENESSOMOS.HTML*/
 /*intro en BEM*/
@@ -430,8 +436,6 @@ hr {
       justify-self: center;
 }
 
-<<<<<<< HEAD
-=======
 .card3 {
   position: relative;
   display: -webkit-box;
@@ -448,7 +452,6 @@ hr {
   border: none;
 }
 
->>>>>>> Versión_c_curvas
 .contenedornoticias {
   background-color: cornflowerblue;
 }
@@ -462,29 +465,6 @@ hr {
   position: relative;
 }
 
-<<<<<<< HEAD
-.video-responsive {
-  border: 5px solid white;
-  -webkit-transform: scale(0.9, 0.9);
-          transform: scale(0.9, 0.9);
-  /*uso de transform:scale para el tamaño del video*/
-  border-radius: 1em;
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 56.2%;
-  margin-bottom: 20px;
-}
-
-@media screen and (max-width: 280px) {
-  .video-responsive {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-=======
 /*video*/
 .embed-container {
   position: relative;
@@ -499,7 +479,6 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
->>>>>>> Versión_c_curvas
 }
 
 .subpresentación {
