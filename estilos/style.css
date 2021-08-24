@@ -68,20 +68,22 @@
 
 .fuenteRobotoFooter {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: normal;
-  color: cornflowerblue;
+  color: white;
   text-transform: uppercase;
   font-weight: bold;
   margin-left: .8rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .fuenteRobotoForm {
   font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-size: .8em;
   font-weight: normal;
-  color: gray;
+  color: white;
+  text-align: end;
 }
 
 .fuentenewsletter {
@@ -98,6 +100,51 @@
   letter-spacing: 0.31em;
   color: cornflowerblue;
   text-align: center;
+}
+
+@media (max-width: 1024px) and (min-width: 992px) {
+  .card__text3 {
+    font-size: .8em;
+  }
+  .cardNoti__historia {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .card__text3 {
+    font-size: .5em;
+  }
+  .cardNoti__historia {
+    font-size: .1em;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 376px) {
+  .card__text3 {
+    font-size: 1.3em;
+  }
+  .cardNoti__historia {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 375px) and (min-width: 322px) {
+  .card__text3 {
+    font-size: 6em;
+  }
+  .cardNoti__historia {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .card__text3 {
+    font-size: .7em;
+  }
+  .cardNoti__historia {
+    font-size: 2em;
+  }
 }
 
 /*!
@@ -6306,7 +6353,7 @@ ul li:hover a {
           animation-duration: 3s;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
-  font-size: 3em;
+  font-size: 6vh;
 }
 
 .card__text {
@@ -6491,6 +6538,7 @@ button a :hover {
   font-family: 'Roboto', sans-serif;
   color: white;
   text-align: center;
+  font-size: .5em;
 }
 
 .anchorwhite {
@@ -6499,6 +6547,30 @@ button a :hover {
 }
 
 /*Nuestros valores*/
+.valorescontenedor {
+  size: 10em;
+  color: white;
+  text-align: center;
+}
+
+.top {
+  margin-top: .6em;
+}
+
+.top__text {
+  margin-top: .5em;
+}
+
+.hr2 {
+  height: 0.2em !important;
+  opacity: 1;
+  width: 2em;
+  display: block;
+  position: relative;
+  margin: 20px auto 25px auto;
+  border-top: 1px white;
+}
+
 tr {
   background-color: none;
 }
@@ -6528,6 +6600,89 @@ hr {
 .newsletter {
   margin-left: 1em;
   margin-right: 1em;
+}
+
+.site-footer {
+  background-color: #173358;
+  color: #bbbbbb;
+}
+
+.form-control1 {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 40%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+}
+
+.btn-footer {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: .9rem;
+  border-radius: .25rem;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  color: #fff;
+  border-color: cornflowerblue;
+}
+
+.flex-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.datoscontacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+}
+
+.datoscontacto__final {
+  list-style: none;
+  display: inline-block;
 }
 
 /*---------------------------------------------------------------------*/

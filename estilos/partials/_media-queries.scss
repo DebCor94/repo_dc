@@ -6,6 +6,51 @@
 
 @mixin movil {
     @media screen and (max-width: 280px) {
-        @content
+        @content;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 992px){
+    .card__text3 {
+        font-size: .8em;
+    }
+    .cardNoti__historia {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    .card__text3 {
+        font-size: .5em;
+    }
+    .cardNoti__historia {
+        font-size: .1em;
+    }
+}
+
+@media (max-width:767px) and (min-width:376px){
+    .card__text3 {
+        font-size: 1.3em;
+    }
+    .cardNoti__historia {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 375px) and (min-width: 322px){
+    .card__text3 {
+        font-size: 6em;
+    }
+    .cardNoti__historia {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:321px){
+    .card__text3 {
+        font-size: .7em;
+    }
+    .cardNoti__historia {
+        font-size: 2em;
     }
 }

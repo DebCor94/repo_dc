@@ -7,6 +7,9 @@
     
     <!--biblioteca AOS-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="./estilos/fontawesome-free-5.15.4-web/css/all.css">
     
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -28,12 +31,12 @@
     <title>servicios.html</title>
 </head>
 <body>
-    <a href="#" class="whatsapp" target="_blank"><i class="fa fa-whatsapp whatsapp-icon"></i></a> <!--logo whatsapp fixed-->
+  <a href="#" class="whatsapp" target="_blank"><i class="fab fa-whatsapp whatsapp-icon"></i></a> <!--logo whatsapp fixed-->
     <header class="sticky-top">
         <!--NAV-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-            <img class="img-fluid logo impulsarg" src="./imágenes/impulsargLogo.png" alt=""> <!--se exporto logo en Illustrator a SVG-->
+            <img class="img-fluid logo impulsarg" src="./imágenes/2021_1.png" alt=""> <!--se exporto logo en Illustrator a SVG-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -66,7 +69,7 @@
             <h1 class="quienesSomos__titulo slide-top">Servicios</h1> <!-- uso de BEM. Se utilizó el diseño de la intro de quienesSomos.html y se copió en todas las intros de las páginas web -->
             <div class="row">
                 <div class="card3 mb-3">
-                    <img src="./imágenes/servicios.jpg" alt="" class="card-img-top img-fluid__slide">
+                    <img src="./imágenes/2021_10.jpg" alt="" class="card-img-top img-fluid__slide">
                     <div class="card-body">
                       <p class="quienesSomos__presentación slide-top">Conocé nuestros servicios y enterate de sus principales líneas de trabajo.</p>
                     </div>
@@ -79,19 +82,19 @@
             <div class="row text-center mt-0">
               <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100" data-aos-once="true" data-aos-duration="1000"> <!--animación con AOS-->
                 <h3 class="mt-4 services">Briliar Consulting</h3> <!-- uso de BEM en bloque SERVICES -->
-                <img class= "img-fluid services__img" src="./imágenes/Consulting.jpg" alt="">
+                <img class= "img-fluid services__img" src="./imágenes/2021_11.jpg" alt="">
                 <br>
                 <p class="services__text">Tramitamos todos y cada uno de los documentos necesarios para poder Importar/Exportar con éxito en Argentina</p>
               </div>
               <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100" data-aos-once="true" data-aos-duration="2000"> <!--animación con AOS-->
                 <h3 class="mt-4 services">Briliar Customer</h3>
-                <img class= "img-fluid services__img" src="./imágenes/Customer.jpg" alt="nota2">
+                <img class= "img-fluid services__img" src="./imágenes/2021_12.jpg" alt="nota2">
                 <br>
                 <p class="services__text">Realizamos todas las tareas relacionadas a los despachos de Importación y Exportación. Contamos con habilitación en las principales aduanas del país y personal terciarizado en cada una de ellas para el seguimiento de los trámites y la liberación de las cargas.</p>
               </div>
               <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100" data-aos-once="true" data-aos-duration="3000"> <!--animación con AOS-->
                 <h3 class="mt-4 services">Briliar Forwarder</h3>
-                <img class= "img-fluid services__img" src="./imágenes/Forwarder.jpg" alt="nota3">
+                <img class= "img-fluid services__img" src="./imágenes/2021_12.jpg" alt="nota3">
                 <br>
                 <p class="services__text">Actualmente estamos habilitados ante la Aduana Argentina como ATA (Agente de Transporte Aduanero) teniendo presentada toda la documentación requerida por este organismo. Esto nos permite poder operar en las principales aduanas del país recibiendo y manejando cargas en sus correspondientes jurisdicciones</p>
               </div>
@@ -99,36 +102,36 @@
             </div>
         </div>
         <hr class="gradiente1">
-        <br>
     </main>
     <!--Footer con bootstrap y grid-->
-    <footer>
+    <footer class="site-footer">
+      <br>
       <h4 class="fuenteRobotoFooter">Estamos en contacto</h4>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-6">
             <form>
-              <div class="row mb-3">
-                <label for="inputName" class="col-sm-3 col-form-label fuenteRobotoForm">Nombre</label>
-                <div class="col-sm-9">
-                  <input type="name" class="form-control" id="inputName">
+              <div class="row mb-2">
+                <label for="inputName" class="col-sm-6 col-form-label fuenteRobotoForm">Nombre</label>
+                <div class="col-sm-6">
+                  <input type="name" class="form-control1" id="inputName">
                 </div>
               </div>
-              <div class="row mb-3">
-                <label for="inputEmail3" class="col-sm-3 col-form-label fuenteRobotoForm">Email</label>
-                <div class="col-sm-9">
-                  <input type="email" class="form-control" id="inputEmail3">
+              <div class="row mb-2">
+                <label for="inputEmail3" class="col-sm-6 col-form-label fuenteRobotoForm">Email</label>
+                <div class="col-sm-6">
+                  <input type="email" class="form-control1" id="inputEmail3">
                 </div>
               </div>
-              <div class="row mb-3">
-                <label for="inputEmpresa" class="col-sm-3 col-form-label fuenteRobotoForm">Empresa</label>
-                <div class="col-sm-9">
-                  <input type="empresa" class="form-control" id="inputEmpresa">
+              <div class="row mb-2">
+                <label for="inputEmpresa" class="col-sm-6 col-form-label fuenteRobotoForm">Empresa</label>
+                <div class="col-sm-6">
+                  <input type="empresa" class="form-control1" id="inputEmpresa">
                 </div>
               </div>
-              <fieldset class="row mb-3">
-                <legend class="col-form-label col-sm-3 pt-0 fuenteRobotoForm">Servicio/s de interés</legend>
-                <div class="col-sm-9">
+              <fieldset class="row mb-2">
+                <legend class="col-form-label col-sm-6 pt-0 fuenteRobotoForm">Servicio/s de interés</legend>
+                <div class="col-sm-6">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="option1" checked>
                     <label class="form-check-label fuenteRobotoForm" for="gridRadios1">
@@ -149,22 +152,24 @@
                   </div>
                 </div>
               </fieldset>
-              <button type="submit" class="btn btn-primary">Enviar</button>
-              <button type="submit" class="btn btn-primary">Borrar</button>
             </form>
+            <div class="col mb-2 flex-end">
+              <button type="submit" class="btn-footer">Enviar</button>
+              <button type="submit" class="btn-footer">Borrar</button>
+            </div>
           </div>
-          <div class="col-md-4">
-            <h6 class="fuentenewsletter text-center">Suscribase a nuestro newsletter</h6>
-            <form>
-              <div class="row mb-12 newsletter">
-                <input type="text" class="form-control" placeholder="Mail" id="inputName">
-              </div>
-            </form>
-          </div>
-          <div class="col-md-4 text-end">
-            <img src="./imágenes/mapa.jpg" alt="mapa">
+          <div class="col-md-6 map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.672516169403!2d-58.37508228477011!3d-34.61244168045716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad5208ffe33%3A0xe73230d01233469e!2sAv.%20Belgrano%20471%2C%20C1092%20AAE%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1629683822639!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
+      </div>
+      <div>
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">comunicaciones@impulsarg.com</li>
+          <li class="nav-item">(54) 115217-8292</li>
+          <li class="nav-item">/in/ImpulsargHolding</li>
+          <li class="nav-item">Impulsarg Holding S.A.</li>
+        </ul>
       </div>
       <br>
     </footer>
