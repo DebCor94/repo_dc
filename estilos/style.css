@@ -60,6 +60,11 @@
   margin-bottom: 0.5em;
 }
 
+.fuentetitle3--newsletter {
+  font-size: 1.5em;
+  text-align: start;
+}
+
 .fuenteRobotoNews {
   font-family: 'Roboto', sans-serif;
   font-size: 0.7em;
@@ -100,6 +105,28 @@
   letter-spacing: 0.31em;
   color: cornflowerblue;
   text-align: center;
+}
+
+.fuenteRobotoForm2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: cornflowerblue;
+  text-align: end;
+  font-weight: bold;
+}
+
+.fuenteRobotoForm2__b {
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: .8em;
+  color: cornflowerblue;
+  text-align: end;
+}
+
+.fuenteRobotoForm2--news {
+  color: white;
+  font-weight: normal;
+  font-size: .8em;
 }
 
 @media (max-width: 1024px) and (min-width: 992px) {
@@ -6643,7 +6670,6 @@ hr {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -6662,6 +6688,11 @@ hr {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
   color: #fff;
   border-color: cornflowerblue;
+  margin: .2em;
+}
+
+.btn-footer--contacto {
+  color: #6495ed;
 }
 
 .flex-end {
@@ -6836,4 +6867,10 @@ hr {
   text-align: center;
   margin-left: 1em;
   margin-right: 1em;
+}
+
+/*---------------------------------------------------------------------*/
+/*DISEÑO DE CONTACTO.HTML*/
+.img-news {
+  padding: .2em;
 }

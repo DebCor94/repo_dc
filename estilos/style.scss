@@ -350,7 +350,6 @@ hr{
     display: inline-block;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
@@ -365,6 +364,10 @@ hr{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     color: #fff;
     border-color: cornflowerblue;
+    margin: .2em;
+    &--contacto {
+        color: #6495ed;
+    }
 }
 
 .flex-end {
@@ -521,4 +524,12 @@ hr{
         margin-left: 1em;
         margin-right: 1em;
     }
+}
+
+/*---------------------------------------------------------------------*/
+
+/*DISEÑO DE CONTACTO.HTML*/
+
+.img-news {
+    padding: .2em;
 }
