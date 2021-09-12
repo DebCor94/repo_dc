@@ -129,6 +129,48 @@
   font-size: .8em;
 }
 
+/*MAPA FOOTER RESPONSIVE */
+@media (max-width: 415px) and (min-width: 320px) {
+  .map-responsive iframe {
+    left: 1rem;
+    top: 0;
+  }
+}
+
+/*NUESTRA HISTORIA (INDEX) RESPONSIVE*/
+@media screen and (max-width: 350px) {
+  .card__text3 {
+    font-size: .7em;
+  }
+  .cardNoti__historia {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 420px) and (min-width: 351px) {
+  .cardNoti__historia {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 421px) {
+  .card__text3 {
+    font-size: 1.3em;
+  }
+  .cardNoti__historia {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .cardNoti__historia {
+    font-size: .2em;
+  }
+  .card__text3 {
+    font-size: .5em;
+  }
+}
+
 @media (max-width: 1024px) and (min-width: 992px) {
   .card__text3 {
     font-size: .8em;
@@ -138,39 +180,12 @@
   }
 }
 
-@media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 1199px) and (min-width: 1025px) {
   .card__text3 {
-    font-size: .5em;
+    font-size: .75em;
   }
   .cardNoti__historia {
-    font-size: .1em;
-  }
-}
-
-@media (max-width: 767px) and (min-width: 376px) {
-  .card__text3 {
-    font-size: 1.3em;
-  }
-  .cardNoti__historia {
-    font-size: 2em;
-  }
-}
-
-@media (max-width: 375px) and (min-width: 322px) {
-  .card__text3 {
-    font-size: 6em;
-  }
-  .cardNoti__historia {
-    font-size: 1.5em;
-  }
-}
-
-@media screen and (max-width: 321px) {
-  .card__text3 {
-    font-size: .7em;
-  }
-  .cardNoti__historia {
-    font-size: 2em;
+    font-size: 1.4em;
   }
 }
 
@@ -6420,16 +6435,16 @@ ul li:hover a {
 }
 
 .img-fluid__slide {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-name: slide-top;
           animation-name: slide-top;
 }
 
 .slide-top {
   /*animación extraída de Animista y aplicada a la descripción del sitio*/
-  -webkit-animation: slide-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes slide-top {
@@ -6519,6 +6534,19 @@ button a :hover {
   border-color: none !important;
 }
 
+.foo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 /*Bloque de imágenes de la sección noticias con OPERACIONES (en base a las variables definidas al inicio del SCSS)*/
 .noticias-img {
   width: 13.75em;
@@ -6528,6 +6556,7 @@ button a :hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 110px;
+  margin: auto;
 }
 
 .mt-4 {
@@ -6632,6 +6661,15 @@ hr {
 .site-footer {
   background-color: #173358;
   color: #bbbbbb;
+  padding: 1rem;
+}
+
+.rrss {
+  margin: 1em;
+}
+
+.rrss__1 {
+  padding: .2rem;
 }
 
 .form-control1 {
@@ -6657,6 +6695,7 @@ hr {
 .map-responsive {
   overflow: hidden;
   padding-bottom: 40%;
+  margin: 0px;
   position: relative;
   height: 0;
 }
@@ -6766,6 +6805,10 @@ hr {
   background-color: cornflowerblue;
 }
 
+.qs {
+  padding: 1em;
+}
+
 .contenerdorvideo {
   background-color: cornflowerblue;
   height: 0px;
@@ -6792,9 +6835,18 @@ hr {
 }
 
 .subpresentación {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: 'Roboto', sans-serif;
   letter-spacing: .20em;
-  word-spacing: 5px;
   font-size: 1.3em;
   color: white;
   line-height: 1.5em;
@@ -6873,4 +6925,8 @@ hr {
 /*DISEÑO DE CONTACTO.HTML*/
 .img-news {
   padding: .2em;
+}
+
+.mensaje {
+  margin: 1rem;
 }

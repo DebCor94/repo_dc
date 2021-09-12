@@ -10,6 +10,49 @@
     }
 }
 
+/*MAPA FOOTER RESPONSIVE */
+@media (max-width: 415px) and (min-width: 320px) {
+    .map-responsive iframe{
+        left: 1rem;
+        top:0;
+    }
+}
+
+/*NUESTRA HISTORIA (INDEX) RESPONSIVE*/
+@media screen and (max-width:350px){
+    .card__text3 {
+        font-size: .7em;
+    }
+    .cardNoti__historia {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 420px) and (min-width: 351px){
+    .cardNoti__historia {
+        font-size: 1em;
+    }
+}
+
+
+@media (max-width:767px) and (min-width:421px){
+    .card__text3 {
+        font-size: 1.3em;
+    }
+    .cardNoti__historia {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    .cardNoti__historia {
+        font-size: .2em;
+    }
+    .card__text3 {
+        font-size: .5em;
+    }
+}
+
 @media (max-width: 1024px) and (min-width: 992px){
     .card__text3 {
         font-size: .8em;
@@ -19,38 +62,15 @@
     }
 }
 
-@media (max-width: 991px) and (min-width: 768px){
+@media (max-width: 1199px) and (min-width: 1025px){
     .card__text3 {
-        font-size: .5em;
+        font-size: .75em;
     }
     .cardNoti__historia {
-        font-size: .1em;
+        font-size: 1.4em;
     }
 }
 
-@media (max-width:767px) and (min-width:376px){
-    .card__text3 {
-        font-size: 1.3em;
-    }
-    .cardNoti__historia {
-        font-size: 2em;
-    }
-}
 
-@media (max-width: 375px) and (min-width: 322px){
-    .card__text3 {
-        font-size: 6em;
-    }
-    .cardNoti__historia {
-        font-size: 1.5em;
-    }
-}
 
-@media screen and (max-width:321px){
-    .card__text3 {
-        font-size: .7em;
-    }
-    .cardNoti__historia {
-        font-size: 2em;
-    }
-}
+

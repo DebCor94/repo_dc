@@ -121,14 +121,14 @@ ul {
     height: auto;
     vertical-align: middle;
     &__slide {
-        animation-duration: 3s;
+        animation-duration: 1s;
         animation-name: slide-top;
     }
 }
 
 .slide-top { /*animación extraída de Animista y aplicada a la descripción del sitio*/
-	-webkit-animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -204,6 +204,11 @@ button {
     }
 }
 
+.foo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 /*Bloque de imágenes de la sección noticias con OPERACIONES (en base a las variables definidas al inicio del SCSS)*/
 .noticias-img{
@@ -211,6 +216,7 @@ button {
     height: ($alto*20)+20; /*operación= multiplicación y suma*/
     object-fit: cover;
     border-radius: 110px;
+    margin: auto;
 }
 
 
@@ -315,6 +321,14 @@ hr{
 .site-footer {
     background-color: #173358;
     color: #bbbbbb;
+    padding: 1rem;
+}
+
+.rrss {
+    margin: 1em;
+    &__1{
+        padding: .2rem;
+    }
 }
 
 .form-control1 {
@@ -337,6 +351,7 @@ hr{
 .map-responsive{
     overflow:hidden;
     padding-bottom: 40%;
+    margin: 0px;
     position:relative;
     height:0;
 }
@@ -384,7 +399,6 @@ hr{
     }
 }
 
-
 /*---------------------------------------------------------------------*/
 
 /*DISEÑO DE QUIENESSOMOS.HTML*/
@@ -430,6 +444,10 @@ hr{
     background-color: cornflowerblue;
 }
 
+.qs {
+    padding: 1em;
+}
+
 .contenerdorvideo {
     background-color: cornflowerblue;
     height:0px;
@@ -455,9 +473,11 @@ hr{
 }
 
 .subpresentación {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-family: 'Roboto', sans-serif;
     letter-spacing: .20em;
-    word-spacing: 5px;
     font-size: 1.3em;
     color: white;
     line-height: 1.5em;
@@ -532,4 +552,8 @@ hr{
 
 .img-news {
     padding: .2em;
+}
+
+.mensaje {
+    margin: 1rem;
 }
